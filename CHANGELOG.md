@@ -123,7 +123,7 @@
 - DAOs in plugins must be listed in an array, so that their loading order is explicit. Loading them in a
   hash-like table is no longer supported.
   [#8988](https://github.com/Kong/kong/pull/8988)
-- Stop normalizing regex `router.path`. Regex path pattern matches with normalized URI,
+- Stop normalizing regex `route.path`. Regex path pattern matches with normalized URI,
   and we used to replace percent-encoding in regex path pattern to ensure different forms of URI matches.
   That is no longer supported. Except for reserved characters defined in
   [rfc3986](https://datatracker.ietf.org/doc/html/rfc3986#section-2.2),
